@@ -2,7 +2,7 @@
 
 This is a python program used to calculate Quality of Service(QoS) from wireshark capture output, you must export the capture package as CSV.
 
-![MinecraftStatusDiscord](https://i.ibb.co/896Cjzp/Screenshot-2024-03-26-191406.png)
+![WiresharkQoSpy](https://i.ibb.co.com/55tH9gB/image.png)
 ## Getting Started
 
 Simply clone this repo, install requirement package and run the program.
@@ -20,7 +20,8 @@ Install requirement
 
     pip install -r requirement.txt
 
-
+Make sure you put the CSV in the directory containing qos.py
+    ![CSVDIR](https://i.ibb.co.com/fHmYW9M/image.png)
 
 Run the program
 
