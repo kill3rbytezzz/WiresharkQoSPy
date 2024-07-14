@@ -1,7 +1,6 @@
 import pandas as pd
 import statistics
 import os
-from prettytable import PrettyTable
 
 csvlist = []
 

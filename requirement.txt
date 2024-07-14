@@ -1,0 +1,2 @@
+pandas==2.2.2
+statistics==3.4.0b3
