@@ -36,7 +36,7 @@ def packetlossdef(csvname):
     time_array = df['Time'].tolist()
     info_array = df['Info'].tolist()
     for i in range (len(info_array)):
-          if 'not captured' in info_array[i]:
+          if 'not captured' in str(info_array[i]):
                 pllist.append(i)
     print("Packet Loss =", '{:.4f}'.format(100-((len(time_array)-len(pllist))*100)/len(time_array)))
     print(len(time_array),"-",len(pllist),"=",len(time_array)-len(pllist),"|", len(time_array)-len(pllist),"* 100 =",(len(time_array)-len(pllist))*100,"|",((len(time_array)-len(pllist))*100),"/",len(time_array),"=",'{:.4f}'.format(((len(time_array)-len(pllist))*100)/len(time_array)),"|","100 -", '{:.4f}'.format(((len(time_array)-len(pllist))*100)/len(time_array)),"=",'{:.4f}'.format(100-((len(time_array)-len(pllist))*100)/len(time_array)))
